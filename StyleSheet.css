@@ -39,10 +39,12 @@ body, html {
 .img2 { background-image: url("https://www.ecoshambakilolelodge.com/wp-content/uploads/2019/05/Green-Hand.jpg"); }
 .img3 { background-image: url("https://www.sustainablebusinesstoolkit.com/wp-content/uploads/Short-Guide-To-greenwashing.jpg"); }
 .img4 { background-image: url("https://amenitiesmagazine.com/wp-content/uploads/2019/09/shutterstock_109932590-2-1024x288.jpg"); }
-#btn_def {
+.img5 { background-image: url("https://cdn.shopify.com/s/files/1/1165/3004/articles/greenwashing_2048x.jpg?v=1565955261");}
+.img6 { background-image: url("https://cdn.shopify.com/s/files/1/0112/0888/4288/articles/leaf_1296x.png?v=1560916767%201296w");}
+.btn {
   position: fixed;
   top: 5%;
-  left: 5%;
+  left: @left;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #e9f7f9;
@@ -55,47 +57,7 @@ body, html {
   text-align: center;
   border-radius: 16px;
 }
-#btn_def:hover {
+.btn:hover {
  background-color: rgba(0,0,0, 0.4);
  color:black;
 }
-#btn_impact {
-  position: fixed;
-  top: 5%;
-  left: 13%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #e9f7f9;
-  color: gray;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-  border-radius: 16px;
-}
-#btn_impact:hover {
- background-color: rgba(0,0,0, 0.4);
- color:black;
-}
-#btn_hng {
-  position: fixed;
-  top: 5%;
-  left: 24.3%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #e9f7f9;
-  color: gray;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-  border-radius: 16px;
-}
-#btn_hng:hover {
- background-color: rgba(0,0,0, 0.4);
- color:black;
-/* Position text in the middle of the page/image */
