@@ -28,7 +28,7 @@
     top: 50%;
 }
 
-.mform
-{ weight:300px;
-  margin:auto;
+.mform{
+    width: 450px;
+    margin: auto;
 }
