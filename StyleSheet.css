@@ -1,11 +1,8 @@
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-* {
-  box-sizing: border-box;
+.nb {
+  background-color:#aad9cc;
+  font-family: Arial;
+  margin-bottom:5px;
 }
 .bg-image {
   /* Full height */
@@ -22,8 +19,6 @@ body, html {
 .img5 { background-image: url("https://cdn.shopify.com/s/files/1/1165/3004/articles/greenwashing_2048x.jpg?v=1565955261");}
 .img6 { background-image: url("https://cdn.shopify.com/s/files/1/0112/0888/4288/articles/leaf_1296x.png?v=1560916767%201296w");}
 
-
-
 .wrapper_m {
     text-align: center;
 }
@@ -31,4 +26,9 @@ body, html {
 .button_m {
     position: absolute;
     top: 50%;
+}
+
+.mform
+{ weight:300px;
+  margin:auto;
 }

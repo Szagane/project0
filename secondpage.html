@@ -4,11 +4,11 @@
   <title>Greenwashing</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="StyleSheet.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="StyleSheet.css"
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light"  style="background-color:#aad9cc; font-family: Arial; margin-bottom:5px;">
+<nav class="nb navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="https://szagane.github.io/project0/firstpage.html">Greenwashing</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -37,9 +37,63 @@
     </ul>
   </div>
 </nav>
-
+<form class="needs-validation" novalidate>
+  <div class="row">
+    <div class="col-sm">
+      <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" class="form-control"  required>
+      <div class="invalid-feedback">Please enter a name</div>
+    </div>
+  </div>
+  <div class="col-sm">
+    <div class="form-group">
+      <label for="lastname">Last Name</label>
+      <input type="text" id="lastname" class="form-control" required>
+      <div class="invalid-feedback">Please enter a last name</div>
+    </div>
+  </div>
+</div>
+ <div class="form-group">
+   <label for="username">User Name</label>
+   <input type="text" id="username" class="form-control" required>
+   <div class="invalid-feedback">Pleace enter a valid Username</div>
+ </div>
+ <div class="form-group">
+   <label for="password">Password</label>
+   <input type="password" id="password" class="form-control" required>
+   <div class="invalid-feedback"> Password can't be empty</div>
+ </div>
+    <div class="form-group">
+    <label for="gender">Gender</label>
+    <select class="form-control">
+        <option value = "Баба" type="text">Баба</option>
+        <option value = "Мужик" type="text">Мужик</option>
+        <option value = "Не определен" type="text">Не определен</option>
+    </select>
+  </div>
+  <div class="form-check">
+    <input type="checkbox" id="accept-terms" class="form-check-input" required>
+    <label for="accept-terms" class="form-check-label">Accept terms & info</label>
+    <div class="invalid-feedback">You need accept this</div>
+  </div>
+  <button type="Submit" class="btn btn-outline-success"  style="position:relative;
+    top:50%;
+    left:50%;">Submit</button>
+</form>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+ <script>
+  var form = document.querySelector('.needs-validation');
+   form.addEventListener('submit', function(event) {
+      if (form.checkValidity() === false) {
+         event.preventDefault();
+           event.stopPropagation();
+                }
+            form.classList.add('was-validated');
+        })
+    </script>
 </body>
 </html>
